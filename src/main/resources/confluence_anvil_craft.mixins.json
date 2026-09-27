@@ -3,7 +3,9 @@
   "package": "dev.hail.confluence_anvil_craft.mixin",
   "compatibilityLevel": "JAVA_21",
   "mixins": [
-    "HardmodeAnvilBlockMixin"
+    "BlockEventListenerMixin",
+    "HardmodeAnvilBlockMixin",
+    "WheelLifecycleEventListenerMixin"
   ],
   "injectors": {
     "defaultRequire": 1

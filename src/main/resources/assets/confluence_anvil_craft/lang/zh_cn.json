@@ -3,5 +3,9 @@
 
   "item.confluence_anvil_craft.lead_anvil_hammer": "铅砧锤",
   "item.confluence_anvil_craft.mythril_anvil_hammer": "秘银砧锤",
-  "item.confluence_anvil_craft.orichalcum_anvil_hammer": "山铜砧锤"
+  "item.confluence_anvil_craft.orichalcum_anvil_hammer": "山铜砧锤",
+
+  "screen.confluence_anvil_craft.hardmode_anvil_hammer.anvil_hammer_mode": "砧锤",
+  "screen.confluence_anvil_craft.hardmode_anvil_hammer.mining_hammer_mode": "挖掘锤",
+  "screen.confluence_anvil_craft.hardmode_anvil_hammer.pickaxe_mode": "镐"
 }

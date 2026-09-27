@@ -184,5 +184,13 @@
 		"on_shelf": {
 			"rotation": [0, 180, 0]
 		}
-	}
+	},
+  	"overrides": [
+    	{
+      		"predicate": {
+        	"custom_model_data": 2
+      	},
+      	"model": "confluence_anvil_craft:item/mythril_anvil_hammer_pickaxe_mode"
+    	}
+	]
 }

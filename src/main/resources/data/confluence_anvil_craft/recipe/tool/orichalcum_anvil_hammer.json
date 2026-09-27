@@ -1,0 +1,24 @@
+{
+  "type": "confluence:hardmode_anvil",
+  "key": {
+    "#": {
+      "item": "confluence:orichalcum_anvil"
+    },
+    "o": {
+      "tag": "c:ingots/orichalcum"
+    },
+    "/": {
+      "tag": "c:ingots/palladium"
+    }
+  },
+  "pattern": [
+    "   #",
+    "  o ",
+    " /  ",
+    "/   "
+  ],
+  "result": {
+    "count": 1,
+    "id": "confluence_anvil_craft:orichalcum_anvil_hammer"
+  }
+}

@@ -3,5 +3,13 @@
 	"textures": {
 		"0": "confluence_anvil_craft:item/orichalcum_anvil_hammer",
 		"particle": "confluence_anvil_craft:item/orichalcum_anvil_hammer"
-	}
+	},
+  	"overrides": [
+    	{
+      		"predicate": {
+        	"custom_model_data": 2
+      	},
+      	"model": "confluence_anvil_craft:item/orichalcum_anvil_hammer_pickaxe_mode"
+    	}
+	]
 }

@@ -1,5 +1,6 @@
 package dev.hail.confluence_anvil_craft;
 
+import dev.anvilcraft.lib.v2.network.register.NetworkRegistrar;
 import dev.anvilcraft.lib.v2.registrum.Registrum;
 import dev.dubhe.anvilcraft.block.PiezoelectricCrystalBlock;
 import net.minecraft.resources.ResourceKey;
@@ -10,6 +11,7 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.fml.common.Mod;
 import net.neoforged.fml.ModContainer;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
+import net.neoforged.neoforge.network.event.RegisterPayloadHandlersEvent;
 import org.confluence.mod.common.init.block.FunctionalBlocks;
 import org.slf4j.Logger;
 
@@ -21,6 +23,7 @@ import java.util.List;
 @Mod(ConfluenceAnvilCraft.MOD_ID)
 public class ConfluenceAnvilCraft {
     public static final String MOD_ID = "confluence_anvil_craft";
+    public static final String NETWORK_VERSION = "1";
     public static final Logger LOGGER = LogUtils.getLogger();
     public static final Registrum REGISTRATE = Registrum.create(MOD_ID)
             .defaultCreativeTab((ResourceKey<CreativeModeTab>) null);
@@ -29,7 +32,14 @@ public class ConfluenceAnvilCraft {
         CACCreativeTab.register(modEventBus);
         CACItems.register();
 
+        modEventBus.addListener(this::registerPayload);
         modEventBus.addListener(this::onCommonSetup);
+    }
+
+    private void registerPayload(RegisterPayloadHandlersEvent event) {
+        // By Deepseek: 注册 dev.hail.confluence_anvil_craft.network 包下所有网络包（与 AnvilCraft 的注册方式一致），
+        // 缺少注册会导致发包时抛出 "Payload ... may not be sent to the server!" 并崩溃
+        NetworkRegistrar.register(event.registrar(NETWORK_VERSION), MOD_ID);
     }
 
     private void onCommonSetup(FMLCommonSetupEvent event) {

@@ -1,0 +1,7 @@
+{
+	"parent": "confluence_anvil_craft:item/mythril_anvil_hammer_pickaxe_mode",
+	"textures": {
+		"0": "confluence_anvil_craft:item/orichalcum_anvil_hammer",
+		"particle": "confluence_anvil_craft:item/orichalcum_anvil_hammer"
+	}
+}
