@@ -1,6 +1,7 @@
-package dev.hail.confluence_anvil_craft;
+package dev.hail.confluence_anvil_craft.init;
 
 import dev.dubhe.anvilcraft.init.item.ModItemGroups;
+import dev.hail.confluence_anvil_craft.ConfluenceAnvilCraft;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.item.CreativeModeTab;
 import net.neoforged.bus.api.IEventBus;

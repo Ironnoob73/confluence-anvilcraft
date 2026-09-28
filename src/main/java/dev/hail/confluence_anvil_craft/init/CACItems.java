@@ -1,4 +1,4 @@
-package dev.hail.confluence_anvil_craft;
+package dev.hail.confluence_anvil_craft.init;
 
 import dev.anvilcraft.lib.v2.registrum.util.entry.ItemEntry;
 import dev.hail.confluence_anvil_craft.item.HardmodeAnvilHammerItem;
