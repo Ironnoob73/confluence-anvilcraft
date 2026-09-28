@@ -1,25 +1,39 @@
 package dev.hail.confluence_anvil_craft.item;
 
+import dev.dubhe.anvilcraft.init.ModMenuTypes;
 import dev.dubhe.anvilcraft.init.item.ModItemTags;
+import dev.dubhe.anvilcraft.inventory.*;
 import dev.dubhe.anvilcraft.item.AnvilHammerItem;
+import dev.hail.confluence_anvil_craft.inventory.PortableHardmodeAnvilMenu;
 import net.minecraft.ChatFormatting;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.component.DataComponents;
 import net.minecraft.network.chat.Component;
+import net.minecraft.server.level.ServerPlayer;
 import net.minecraft.tags.BlockTags;
 import net.minecraft.world.InteractionHand;
+import net.minecraft.world.MenuProvider;
+import net.minecraft.world.SimpleMenuProvider;
+import net.minecraft.world.entity.EquipmentSlotGroup;
 import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.entity.ai.attributes.AttributeModifier;
+import net.minecraft.world.entity.ai.attributes.Attributes;
 import net.minecraft.world.entity.player.Player;
+import net.minecraft.world.inventory.ContainerLevelAccess;
 import net.minecraft.world.item.*;
 import net.minecraft.world.item.component.CustomModelData;
+import net.minecraft.world.item.component.ItemAttributeModifiers;
 import net.minecraft.world.item.component.Tool;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
+import org.confluence.lib.ConfluenceMagicLib;
+import org.confluence.lib.common.component.ModRarity;
 import org.confluence.mod.common.init.ModTags;
 import org.confluence.mod.common.init.ModTiers;
 import org.confluence.mod.common.init.block.FunctionalBlocks;
+import org.confluence.mod.common.init.item.ModItems;
 import org.jetbrains.annotations.Range;
 
 import javax.annotation.ParametersAreNonnullByDefault;
@@ -37,8 +51,40 @@ public class HardmodeAnvilHammerItem extends AnvilHammerItem {
     public final Tier tier;
 
     public HardmodeAnvilHammerItem(Properties properties, Tier tier) {
-        super(properties);
+        super(properties.durability(10000)
+                .component(DataComponents.UNBREAKABLE, ModItems.UNBREAKABLE)
+                .component(ConfluenceMagicLib.MOD_RARITY, ModRarity.RED)
+                .attributes(ItemAttributeModifiers.builder()
+                        .add(Attributes.ATTACK_DAMAGE, new AttributeModifier(
+                                        BASE_ATTACK_DAMAGE_ID,
+                                        5 + tier.getAttackDamageBonus(),
+                                        AttributeModifier.Operation.ADD_VALUE),
+                                EquipmentSlotGroup.MAINHAND)
+                        .build()));
         this.tier = tier;
+    }
+
+    @Override
+    public ItemStack finishUsingItem(ItemStack stack, Level level, LivingEntity livingEntity) {
+        if (!level.isClientSide && livingEntity instanceof ServerPlayer player) {
+            int slot = player.getUsedItemHand() == InteractionHand.MAIN_HAND ? player.getInventory().selected : 40;
+            if (player instanceof ServerPlayer serverPlayer) {
+                OpenedHammerSource source = OpenedHammerSource.fromInventory(serverPlayer.getInventory(), slot);
+                if (source != null) {
+                    if (serverPlayer.containerMenu.getCarried().isEmpty()) {
+                        if (serverPlayer.containerMenu != serverPlayer.inventoryMenu) {
+                            serverPlayer.closeContainer();
+                        }
+                        MenuProvider provider = new SimpleMenuProvider((id, playerInventory, menuPlayer) ->
+                                new PortableHardmodeAnvilMenu(id, playerInventory,
+                                        ContainerLevelAccess.create(serverPlayer.level(), serverPlayer.getOnPos()), source),
+                                stack.getHoverName());
+                        ModMenuTypes.open(serverPlayer, provider);
+                    }
+                }
+            }
+        }
+        return stack;
     }
 
     public static Tool createToolProperties(@Range(from = 0, to = 4) int mode, Tier tier) {

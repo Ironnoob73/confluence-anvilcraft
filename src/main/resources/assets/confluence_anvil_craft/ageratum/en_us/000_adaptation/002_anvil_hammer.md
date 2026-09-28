@@ -25,7 +25,9 @@ Functions the same as an <ref item="anvilcraft:anvil_hammer"/>.
 <recipe id="confluence_anvil_craft:mythril_anvil_hammer"/>
 <recipe id="confluence_anvil_craft:orichalcum_anvil_hammer"/>
 </row>
-It has infinite durability and three modes; hold down the Alt key to switch between the Anvil Hammer, Mining Hammer, and Pickaxe.
+- Infinite durability
+- Features three modes; hold the Alt key to switch between the Anvil Hammer, Mining Hammer, and Pickaxe.
+- Long-pressing the right mouse button opens the Hardmode Anvil crafting interface.
 
 <tip>
 **Note**: "Mining hammer" refers to the type of hammer tool from *Confluence* used to mine altars.

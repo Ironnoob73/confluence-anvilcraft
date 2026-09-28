@@ -5,6 +5,7 @@
   "mixins": [
     "BlockEventListenerMixin",
     "HardmodeAnvilBlockMixin",
+    "ImpactPileBehaviorMixin",
     "WheelLifecycleEventListenerMixin"
   ],
   "injectors": {
