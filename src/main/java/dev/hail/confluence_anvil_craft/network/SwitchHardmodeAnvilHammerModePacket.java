@@ -6,16 +6,11 @@ import dev.anvilcraft.lib.v2.network.packet.IServerboundPacket;
 import dev.hail.confluence_anvil_craft.ConfluenceAnvilCraft;
 import dev.hail.confluence_anvil_craft.item.HardmodeAnvilHammerItem;
 import io.netty.buffer.ByteBuf;
-import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.network.codec.ByteBufCodecs;
 import net.minecraft.network.codec.StreamCodec;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.entity.player.Player;
 
-import javax.annotation.ParametersAreNonnullByDefault;
-
-@MethodsReturnNonnullByDefault
-@ParametersAreNonnullByDefault
 public record SwitchHardmodeAnvilHammerModePacket(InteractionHand hand, int mode) implements IServerboundPacket {
     private static final int CYCLE_MODE = -1;
     public static final Type<SwitchHardmodeAnvilHammerModePacket> TYPE = IPacket.type(ConfluenceAnvilCraft.of("switch_hardmode_anvil_hammer_mode"));

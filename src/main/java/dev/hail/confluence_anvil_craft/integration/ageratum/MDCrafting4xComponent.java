@@ -5,14 +5,10 @@ import dev.anvilcraft.resource.ageratum.client.feat.markdown.MDRenderContext;
 import dev.anvilcraft.resource.ageratum.client.feat.markdown.component.extend.MDRecipeComponent;
 import dev.dubhe.anvilcraft.util.AgeratumUtil;
 import dev.hail.confluence_anvil_craft.ConfluenceAnvilCraft;
-import it.unimi.dsi.fastutil.objects.Object2IntMap;
-import net.minecraft.client.Minecraft;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.ShapedRecipePattern;
-import net.minecraft.world.level.block.Blocks;
 import org.confluence.lib.common.recipe.EitherAmountRecipe4x;
 import org.confluence.mod.common.init.block.FunctionalBlocks;
 import org.confluence.mod.common.recipe.*;
@@ -20,7 +16,6 @@ import org.jetbrains.annotations.NotNull;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.stream.Stream;
 
 public class MDCrafting4xComponent extends MDRecipeComponent {
 

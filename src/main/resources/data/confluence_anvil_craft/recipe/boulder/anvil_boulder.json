@@ -1,0 +1,18 @@
+{
+  "type": "confluence:heavy_work_bench",
+  "environment": {
+    "graveyard": true
+  },
+  "ingredients": [
+    {
+      "item": "minecraft:anvil"
+    },
+    {
+      "item": "confluence:normal_boulder"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "confluence_anvil_craft:anvil_boulder"
+  }
+}

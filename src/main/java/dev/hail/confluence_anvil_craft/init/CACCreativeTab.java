@@ -8,9 +8,8 @@ import net.neoforged.bus.api.IEventBus;
 import net.neoforged.neoforge.registries.DeferredHolder;
 import net.neoforged.neoforge.registries.DeferredRegister;
 
-import static dev.hail.confluence_anvil_craft.ConfluenceAnvilCraft.REGISTRATE;
+import static dev.hail.confluence_anvil_craft.ConfluenceAnvilCraft.REGISTRUM;
 
-@SuppressWarnings("unused")
 public class CACCreativeTab {
     private static final DeferredRegister<CreativeModeTab> DEFERRED_REGISTER =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, ConfluenceAnvilCraft.MOD_ID);
@@ -19,7 +18,7 @@ public class CACCreativeTab {
             "confluence_anvil_craft_tab",
             () -> CreativeModeTab.builder()
                     .icon(CACItems.MYTHRIL_ANVIL_HAMMER::asStack)
-                    .title(REGISTRATE.addLang("item_group", ConfluenceAnvilCraft.of("items"), "Confluence: Anvil Craft"))
+                    .title(REGISTRUM.addLang("item_group", ConfluenceAnvilCraft.of("items"), "Confluence: Anvil Craft"))
                     .displayItems(CACCreativeTab::addItems)
                     .withTabsBefore(ModItemGroups.ANVILCRAFT_BUILDING_BLOCKS.getId(), ModItemGroups.ANVILCRAFT_ITEMS.getId())
                     .build()
@@ -33,6 +32,7 @@ public class CACCreativeTab {
         output.accept(CACItems.LEAD_ANVIL_HAMMER);
         output.accept(CACItems.MYTHRIL_ANVIL_HAMMER);
         output.accept(CACItems.ORICHALCUM_ANVIL_HAMMER);
+        output.accept(CACBlocks.ANVIL_BOULDER.asItem());
     }
 }
 
