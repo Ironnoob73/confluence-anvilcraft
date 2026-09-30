@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A":  [
+      {"tag": "c:plates/lead"},
+      {"tag": "c:plates/iron"}
+    ],
+    "B":  [
+      {"tag": "c:ingots/lead"},
+      {"tag": "c:ingots/iron"}
+    ]
+  },
+  "pattern": [
+    "BAB",
+    "B B",
+    "B B"
+  ],
+  "result": {
+    "count": 1,
+    "id": "anvilcraft:stamping_platform"
+  }
+}

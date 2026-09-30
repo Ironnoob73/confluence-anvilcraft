@@ -3,10 +3,7 @@ package dev.hail.confluence_anvil_craft;
 import dev.anvilcraft.lib.v2.network.register.NetworkRegistrar;
 import dev.anvilcraft.lib.v2.registrum.Registrum;
 import dev.dubhe.anvilcraft.block.PiezoelectricCrystalBlock;
-import dev.hail.confluence_anvil_craft.init.CACBlockEntities;
-import dev.hail.confluence_anvil_craft.init.CACBlocks;
-import dev.hail.confluence_anvil_craft.init.CACCreativeTab;
-import dev.hail.confluence_anvil_craft.init.CACItems;
+import dev.hail.confluence_anvil_craft.init.*;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.CreativeModeTab;
@@ -37,6 +34,7 @@ public class ConfluenceAnvilCraft {
         CACItems.register();
         CACBlockEntities.register(modEventBus);
         CACBlocks.register();
+        CACEntities.register();
 
         modEventBus.addListener(this::registerPayload);
         modEventBus.addListener(this::onCommonSetup);

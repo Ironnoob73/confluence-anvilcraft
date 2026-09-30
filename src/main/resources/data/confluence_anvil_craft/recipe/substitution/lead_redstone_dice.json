@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "B": {
+      "tag": "minecraft:wooden_buttons"
+    },
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "I": [
+      {"tag": "c:ingots/lead"},
+      {"tag": "c:ingots/iron"}
+    ]
+  },
+  "pattern": [
+    " G ",
+    "BBB",
+    "III"
+  ],
+  "result": {
+    "count": 1,
+    "id": "anvilcraft:redstone_dice"
+  }
+}

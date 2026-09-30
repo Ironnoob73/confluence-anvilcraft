@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:soul_sand"
+    },
+    "B":  [
+      {"tag": "c:ingots/lead"},
+      {"tag": "c:ingots/iron"}
+    ]
+  },
+  "pattern": [
+    "A A",
+    "BAB",
+    "BBB"
+  ],
+  "result": {
+    "count": 4,
+    "id": "anvilcraft:sliding_rail_stop"
+  }
+}

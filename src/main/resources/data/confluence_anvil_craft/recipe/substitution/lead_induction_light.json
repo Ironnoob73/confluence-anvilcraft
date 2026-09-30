@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": [
+      {"tag": "c:ingots/lead"},
+      {"tag": "c:ingots/iron"}
+    ],
+    "B": {
+      "item": "anvilcraft:magnetoelectric_core"
+    }
+  },
+  "pattern": [
+    "A",
+    "B",
+    "A"
+  ],
+  "result": {
+    "count": 8,
+    "id": "anvilcraft:induction_light"
+  }
+}

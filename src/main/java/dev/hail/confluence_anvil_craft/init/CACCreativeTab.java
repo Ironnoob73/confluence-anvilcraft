@@ -33,6 +33,7 @@ public class CACCreativeTab {
         output.accept(CACItems.MYTHRIL_ANVIL_HAMMER);
         output.accept(CACItems.ORICHALCUM_ANVIL_HAMMER);
         output.accept(CACBlocks.ANVIL_BOULDER.asItem());
+        output.accept(CACBlocks.LEAD_ANVIL_BOULDER.asItem());
     }
 }
 

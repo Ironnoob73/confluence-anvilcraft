@@ -1,6 +1,8 @@
 {
   "values": [
     "confluence:mythril_anvil",
-    "confluence:orichalcum_anvil"
+    "confluence:orichalcum_anvil",
+    "confluence_anvil_craft:anvil_boulder",
+    "confluence_anvil_craft:lead_anvil_boulder"
   ]
 }

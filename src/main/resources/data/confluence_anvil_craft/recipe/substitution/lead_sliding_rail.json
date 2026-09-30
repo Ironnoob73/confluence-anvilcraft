@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "A": {
+      "item": "minecraft:blue_ice"
+    },
+    "B":  [
+      {"tag": "c:ingots/lead"},
+      {"tag": "c:ingots/iron"}
+    ]
+  },
+  "pattern": [
+    "A A",
+    "BAB",
+    "BBB"
+  ],
+  "result": {
+    "count": 16,
+    "id": "anvilcraft:sliding_rail"
+  }
+}

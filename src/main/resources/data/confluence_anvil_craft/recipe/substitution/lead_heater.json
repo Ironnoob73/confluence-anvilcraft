@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:terracotta"
+    },
+    "B":  [
+      {"tag": "c:ingots/lead"},
+      {"tag": "c:ingots/iron"}
+    ],
+    "C": {
+      "item": "anvilcraft:magnetoelectric_core"
+    }
+  },
+  "pattern": [
+    "ABA",
+    "BCB",
+    "BBB"
+  ],
+  "result": {
+    "count": 1,
+    "id": "anvilcraft:heater"
+  }
+}

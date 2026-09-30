@@ -1,0 +1,20 @@
+{
+  "type": "anvilcraft:super_heating",
+  "ingredients": [
+    {
+      "count": 2,
+      "items": "#confluence_anvil_craft:any_iron_block"
+    },
+    {
+      "items": "#c:storage_blocks/platinum"
+    },
+    {
+      "items": "#confluence_anvil_craft:gems_block_for_royal_steel"
+    }
+  ],
+  "results": [
+    {
+      "id": "anvilcraft:royal_steel_block"
+    }
+  ]
+}

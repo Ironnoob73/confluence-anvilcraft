@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:copper_ingot"
+    },
+    "B": {
+      "item": "anvilcraft:magnetoelectric_core"
+    },
+    "C": [
+      {"tag": "c:ingots/lead"},
+      {"tag": "c:ingots/iron"}
+    ],
+    "D": {
+      "tag": "c:glass_panes"
+    }
+  },
+  "pattern": [
+    "ADA",
+    "ABA",
+    "CCC"
+  ],
+  "result": {
+    "count": 1,
+    "id": "anvilcraft:charger"
+  }
+}

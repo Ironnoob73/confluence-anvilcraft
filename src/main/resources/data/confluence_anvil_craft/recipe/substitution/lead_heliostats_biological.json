@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "anvilcraft:heliostats",
+  "key": {
+    "F": {
+      "item": "minecraft:sunflower"
+    },
+    "I": {
+      "tag": "c:storage_blocks/lead"
+    },
+    "S": {
+      "tag": "c:plates/silver"
+    }
+  },
+  "pattern": [
+    "S S",
+    "SFS",
+    " I "
+  ],
+  "result": {
+    "count": 8,
+    "id": "anvilcraft:heliostats"
+  }
+}

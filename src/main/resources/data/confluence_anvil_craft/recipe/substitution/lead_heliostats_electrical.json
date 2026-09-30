@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "anvilcraft:heliostats",
+  "key": {
+    "C": {
+      "item": "anvilcraft:processor"
+    },
+    "D": {
+      "item": "minecraft:daylight_detector"
+    },
+    "I": {
+      "tag": "c:storage_blocks/lead"
+    },
+    "S": {
+      "tag": "c:plates/silver"
+    }
+  },
+  "pattern": [
+    "SDS",
+    "SCS",
+    " I "
+  ],
+  "result": {
+    "count": 8,
+    "id": "anvilcraft:heliostats"
+  }
+}

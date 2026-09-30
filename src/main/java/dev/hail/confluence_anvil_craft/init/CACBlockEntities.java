@@ -23,6 +23,7 @@ public class CACBlockEntities {
     public static final Supplier<BlockEntityType<AbstractMechanicalBlock.BEntity>> MECHANICAL_BLOCK_ENTITY =
             BLOCK_ENTITIES.register("mechanical_block_entity", () -> {
                 MECHANICAL_BLOCKS.add(CACBlocks.ANVIL_BOULDER);
+                MECHANICAL_BLOCKS.add(CACBlocks.LEAD_ANVIL_BOULDER);
                 Block[] validBlocks = MECHANICAL_BLOCKS.stream().map(BlockEntry::get).toArray(Block[]::new);
                 MECHANICAL_BLOCKS = null;
                 return BlockEntityType.Builder.of(AbstractMechanicalBlock.BEntity::new, validBlocks).build(DSL.remainderType());
