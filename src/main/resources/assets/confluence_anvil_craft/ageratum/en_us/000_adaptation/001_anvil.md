@@ -16,6 +16,7 @@ Now the Mithril Anvil and Orichalcum Anvil:
 - Can be attracted by Magnets
 - Can be used in Anvil Processing
 - Can injure creatures, dealing up to 120 points of damage
+- - Striking an <ref item="anvilcraft:impact_pile"/> allows a <ref item="anvilcraft:mineral_fountain"/> to spawn regardless of the fall height (provided other conditions are still met).
 
 # Power Generation
 The three types of anvils from the *Confluence* can also be used for <ref item="anvilcraft:piezoelectric_crystal"/> power generation.

@@ -22,7 +22,7 @@ items:
 
 # Sanctification Hardmode Ores
 
-These blocks do not generate naturally in the world, nor do they appear through Hallow spread; instead, they are produced by Mineral Springs.
+These blocks do not generate naturally in the world, nor do they appear through Hallow spread. Instead, they are produced by <ref item="anvilcraft:mineral_fountain"/>.
 <row halign="center">
 <recipe id="confluence_anvil_craft:mineral_fountain/sanctification_cobalt_ore"/>
 <recipe id="confluence_anvil_craft:mineral_fountain/sanctification_palladium_ore"/>

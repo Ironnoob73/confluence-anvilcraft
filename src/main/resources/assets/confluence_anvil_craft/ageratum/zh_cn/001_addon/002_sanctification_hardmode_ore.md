@@ -22,7 +22,7 @@ items:
 
 # 圣化新三矿
 
-这些方块不能生成在世界中，也不能通过神圣传染出现，而是由矿物涌泉产出。
+这些方块不能生成在世界中，也不能通过神圣传染出现，而是由<ref item="anvilcraft:mineral_fountain"/>产出。
 <row halign="center">
 <recipe id="confluence_anvil_craft:mineral_fountain/sanctification_cobalt_ore"/>
 <recipe id="confluence_anvil_craft:mineral_fountain/sanctification_palladium_ore"/>

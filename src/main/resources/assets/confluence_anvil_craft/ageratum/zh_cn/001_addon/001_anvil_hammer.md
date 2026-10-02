@@ -22,6 +22,7 @@ items:
 - 无限耐久
 - 有三种模式，按住Alt键可以在砧锤、挖掘锤和镐中选择
 - 右键长按打开的是困难模式砧合成界面。
+- 砸中<ref item="anvilcraft:impact_pile"/>可以无视下落高度生成<ref item="anvilcraft:mineral_fountain"/>（其他条件依旧要满足）。
 
 <tip>
 **注**:挖掘锤指的是汇流来世增加的锤工具类型，用于挖掘祭坛。

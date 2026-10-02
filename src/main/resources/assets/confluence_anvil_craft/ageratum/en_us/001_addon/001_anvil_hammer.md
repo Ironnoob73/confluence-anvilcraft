@@ -22,6 +22,7 @@ items:
 - Infinite durability
 - Features three modes; hold the Alt key to switch between the Anvil Hammer, Mining Hammer, and Pickaxe.
 - Long-pressing the right mouse button opens the Hardmode Anvil crafting interface.
+- Striking an <ref item="anvilcraft:impact_pile"/> allows a <ref item="anvilcraft:mineral_fountain"/> to spawn regardless of the fall height (provided other conditions are still met).
 
 <tip>
 **Note**: "Mining hammer" refers to the type of hammer tool from *Confluence* used to mine altars.

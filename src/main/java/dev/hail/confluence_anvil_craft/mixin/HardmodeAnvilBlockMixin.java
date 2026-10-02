@@ -1,5 +1,6 @@
 package dev.hail.confluence_anvil_craft.mixin;
 
+import dev.dubhe.anvilcraft.block.ImpactPileBlock;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.damagesource.DamageSource;

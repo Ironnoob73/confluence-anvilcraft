@@ -1,6 +1,7 @@
 package dev.hail.confluence_anvil_craft.mixin;
 
 import com.llamalad7.mixinextras.sugar.Local;
+import dev.dubhe.anvilcraft.block.ImpactPileBlock;
 import dev.dubhe.anvilcraft.event.BlockEventListener;
 import dev.hail.confluence_anvil_craft.item.HardmodeAnvilHammerItem;
 import net.minecraft.world.InteractionHand;
@@ -16,9 +17,10 @@ public class BlockEventListenerMixin {
             at = @At("HEAD"), cancellable = true)
     private static void injectedAnvilHammerAttack(CallbackInfo ci, @Local(name = "event") PlayerInteractEvent.LeftClickBlock event) {
         InteractionHand hand = event.getHand();
-        if (event.getEntity().getItemInHand(hand).getItem() instanceof HardmodeAnvilHammerItem
-                && !HardmodeAnvilHammerItem.isAnvilHammerMode(event.getEntity().getItemInHand(hand))) {
-            ci.cancel();
+        if (event.getEntity().getItemInHand(hand).getItem() instanceof HardmodeAnvilHammerItem){
+            if (!HardmodeAnvilHammerItem.isAnvilHammerMode(event.getEntity().getItemInHand(hand))) {
+                ci.cancel();
+            }
         }
     }
 }
