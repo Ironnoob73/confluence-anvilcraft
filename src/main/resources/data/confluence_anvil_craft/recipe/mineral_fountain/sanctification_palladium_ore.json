@@ -1,0 +1,12 @@
+{
+  "type": "anvilcraft:mineral_fountain",
+  "from_block": {
+    "blocks": "confluence:pearlstone"
+  },
+  "need_block": {
+    "blocks": "#c:storage_blocks/raw_palladium"
+  },
+  "to_block": {
+    "block": "confluence_anvil_craft:sanctification_palladium_ore"
+  }
+}

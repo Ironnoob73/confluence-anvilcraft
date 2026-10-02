@@ -1,0 +1,13 @@
+{
+  "type": "anvilcraft:laser_hit",
+  "hit_time": 120,
+  "input": {
+    "blocks": "#c:ores_in_ground/mud"
+  },
+  "laser_strength": 8,
+  "priority": -70,
+  "result_block": {
+    "Name": "minecraft:mud"
+  },
+  "use_block_loot": true
+}

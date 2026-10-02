@@ -1,0 +1,24 @@
+{
+  "values": [
+    "confluence:corruption_coal_ore",
+    "confluence:corruption_copper_ore",
+    "confluence:corruption_tin_ore",
+    "confluence:corruption_iron_ore",
+    "confluence:corruption_lead_ore",
+    "confluence:corruption_silver_ore",
+    "confluence:corruption_tungsten_ore",
+    "confluence:corruption_gold_ore",
+    "confluence:corruption_platinum_ore",
+    "confluence:corruption_emerald_ore",
+    "confluence:corruption_diamond_ore",
+    "confluence:corruption_lapis_ore",
+    "confluence:corruption_redstone_ore",
+    "confluence:corruption_ruby_ore",
+    "confluence:corruption_topaz_ore",
+    "confluence:corruption_jade_ore",
+    "confluence:corruption_sapphire_ore",
+    "confluence:corruption_amethyst_ore",
+    "confluence:corruption_demonite_ore",
+    "confluence:corruption_crimtane_ore"
+  ]
+}

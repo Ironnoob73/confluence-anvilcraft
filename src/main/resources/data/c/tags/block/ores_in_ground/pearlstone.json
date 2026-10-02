@@ -1,0 +1,31 @@
+{
+  "values": [
+    "confluence:sanctification_coal_ore",
+    "confluence:sanctification_copper_ore",
+    "confluence:sanctification_tin_ore",
+    "confluence:sanctification_iron_ore",
+    "confluence:sanctification_lead_ore",
+    "confluence:sanctification_silver_ore",
+    "confluence:sanctification_tungsten_ore",
+    "confluence:sanctification_gold_ore",
+    "confluence:sanctification_platinum_ore",
+    "confluence:sanctification_emerald_ore",
+    "confluence:sanctification_diamond_ore",
+    "confluence:sanctification_lapis_ore",
+    "confluence:sanctification_redstone_ore",
+    "confluence:sanctification_ruby_ore",
+    "confluence:sanctification_topaz_ore",
+    "confluence:sanctification_jade_ore",
+    "confluence:sanctification_sapphire_ore",
+    "confluence:sanctification_amethyst_ore",
+    "confluence:sanctification_demonite_ore",
+    "confluence:sanctification_crimtane_ore",
+
+    "confluence_anvil_craft:sanctification_cobalt_ore",
+    "confluence_anvil_craft:sanctification_palladium_ore",
+    "confluence_anvil_craft:sanctification_mythril_ore",
+    "confluence_anvil_craft:sanctification_orichalcum_ore",
+    "confluence_anvil_craft:sanctification_titanium_ore",
+    "confluence_anvil_craft:sanctification_adamantite_ore"
+  ]
+}

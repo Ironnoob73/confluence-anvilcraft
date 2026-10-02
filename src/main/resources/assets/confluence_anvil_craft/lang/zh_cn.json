@@ -8,6 +8,13 @@
   "block.confluence_anvil_craft.anvil_boulder": "铁砧巨石",
   "block.confluence_anvil_craft.lead_anvil_boulder": "铅砧巨石",
 
+  "block.confluence_anvil_craft.sanctification_cobalt_ore": "圣化钴矿",
+  "block.confluence_anvil_craft.sanctification_palladium_ore": "圣化钯金矿",
+  "block.confluence_anvil_craft.sanctification_mythril_ore": "圣化秘银矿",
+  "block.confluence_anvil_craft.sanctification_orichalcum_ore": "圣化山铜矿",
+  "block.confluence_anvil_craft.sanctification_titanium_ore": "圣化钛金矿",
+  "block.confluence_anvil_craft.sanctification_adamantite_ore": "圣化精金矿",
+
   "screen.confluence_anvil_craft.hardmode_anvil_hammer.anvil_hammer_mode": "砧锤",
   "screen.confluence_anvil_craft.hardmode_anvil_hammer.mining_hammer_mode": "挖掘锤",
   "screen.confluence_anvil_craft.hardmode_anvil_hammer.pickaxe_mode": "镐"

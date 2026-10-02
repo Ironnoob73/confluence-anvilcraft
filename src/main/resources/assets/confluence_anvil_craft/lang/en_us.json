@@ -8,6 +8,13 @@
   "block.confluence_anvil_craft.anvil_boulder": "Anvil Boulder",
   "block.confluence_anvil_craft.lead_anvil_boulder": "Lead Anvil Boulder",
 
+  "block.confluence_anvil_craft.sanctification_cobalt_ore": "Sancification Cobalt Ore",
+  "block.confluence_anvil_craft.sanctification_palladium_ore": "Sancification Palladium Ore",
+  "block.confluence_anvil_craft.sanctification_mythril_ore": "Sancification Mythril Ore",
+  "block.confluence_anvil_craft.sanctification_orichalcum_ore": "Sancification Orichalcum Ore",
+  "block.confluence_anvil_craft.sanctification_titanium_ore": "Sancification Titanium Ore",
+  "block.confluence_anvil_craft.sanctification_adamantite_ore": "Sancification Admantite Ore",
+
   "screen.confluence_anvil_craft.hardmode_anvil_hammer.anvil_hammer_mode": "Anvil Hammer",
   "screen.confluence_anvil_craft.hardmode_anvil_hammer.mining_hammer_mode": "Mining Hammer",
   "screen.confluence_anvil_craft.hardmode_anvil_hammer.pickaxe_mode": "Pickaxe"

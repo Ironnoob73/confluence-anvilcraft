@@ -1,0 +1,24 @@
+{
+  "values": [
+    "confluence:fleshification_coal_ore",
+    "confluence:fleshification_copper_ore",
+    "confluence:fleshification_tin_ore",
+    "confluence:fleshification_iron_ore",
+    "confluence:fleshification_lead_ore",
+    "confluence:fleshification_silver_ore",
+    "confluence:fleshification_tungsten_ore",
+    "confluence:fleshification_gold_ore",
+    "confluence:fleshification_platinum_ore",
+    "confluence:fleshification_emerald_ore",
+    "confluence:fleshification_diamond_ore",
+    "confluence:fleshification_lapis_ore",
+    "confluence:fleshification_redstone_ore",
+    "confluence:fleshification_ruby_ore",
+    "confluence:fleshification_topaz_ore",
+    "confluence:fleshification_jade_ore",
+    "confluence:fleshification_sapphire_ore",
+    "confluence:fleshification_amethyst_ore",
+    "confluence:fleshification_demonite_ore",
+    "confluence:fleshification_crimtane_ore"
+  ]
+}

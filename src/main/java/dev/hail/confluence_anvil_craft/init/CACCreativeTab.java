@@ -34,6 +34,13 @@ public class CACCreativeTab {
         output.accept(CACItems.ORICHALCUM_ANVIL_HAMMER);
         output.accept(CACBlocks.ANVIL_BOULDER.asItem());
         output.accept(CACBlocks.LEAD_ANVIL_BOULDER.asItem());
+
+        output.accept(CACBlocks.SANCTIFICATION_COBALT_ORE.asItem());
+        output.accept(CACBlocks.SANCTIFICATION_PALLADIUM_ORE.asItem());
+        output.accept(CACBlocks.SANCTIFICATION_MYTHRIL_ORE.asItem());
+        output.accept(CACBlocks.SANCTIFICATION_ORICHALCUM_ORE.asItem());
+        output.accept(CACBlocks.SANCTIFICATION_TITANIUM_ORE.asItem());
+        output.accept(CACBlocks.SANCTIFICATION_ADAMANTITE_ORE.asItem());
     }
 }
 

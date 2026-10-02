@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "confluence_anvil_craft:block/sanctification_orichalcum_ore"
+  }
+}

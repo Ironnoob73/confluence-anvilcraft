@@ -1,0 +1,11 @@
+{
+  "type": "anvilcraft:mineral_fountain_chance",
+  "dimension": "minecraft:overworld",
+  "from_block": {
+    "blocks": "confluence:pearlstone"
+  },
+  "to_block": {
+    "block": "confluence:sanctification_topaz_ore",
+    "chance": 0.01
+  }
+}

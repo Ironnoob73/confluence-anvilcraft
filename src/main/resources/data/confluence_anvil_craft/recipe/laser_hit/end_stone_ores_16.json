@@ -1,0 +1,13 @@
+{
+  "type": "anvilcraft:laser_hit",
+  "hit_time": 20,
+  "input": {
+    "blocks": "#c:ores_in_ground/end_stone"
+  },
+  "laser_strength": 16,
+  "priority": -70,
+  "result_block": {
+    "Name": "minecraft:end_stone"
+  },
+  "use_block_loot": true
+}
