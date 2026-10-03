@@ -1,0 +1,12 @@
+{
+  "type": "anvilcraft:mineral_fountain",
+  "from_block": {
+    "blocks": "confluence:crimstone"
+  },
+  "need_block": {
+    "blocks": "#c:storage_blocks/raw_crimtane"
+  },
+  "to_block": {
+    "block": "confluence:fleshification_crimtane_ore"
+  }
+}

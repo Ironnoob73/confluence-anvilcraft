@@ -22,10 +22,10 @@ navigation:
 你可以使用铂金与琥珀和任意红宝石、黄玉或蓝宝石等制造皇家钢。
 
 <row halign="center">
-<recipe id="confluence_anvil_craft:substitution/super_heating/royal_steel_ingot_base"/>
-<recipe id="confluence_anvil_craft:substitution/super_heating/royal_steel_ingot_bonus_1"/>
-<recipe id="confluence_anvil_craft:substitution/super_heating/royal_steel_ingot_bonus_2"/>
-<recipe id="confluence_anvil_craft:substitution/super_heating/royal_steel_block_base"/>
-<recipe id="confluence_anvil_craft:substitution/super_heating/royal_steel_block_bonus_1"/>
-<recipe id="confluence_anvil_craft:substitution/super_heating/royal_steel_block_bonus_2"/>
+<recipe id="confluence_anvil_craft:super_heating/royal_steel_ingot_base"/>
+<recipe id="confluence_anvil_craft:super_heating/royal_steel_ingot_bonus_1"/>
+<recipe id="confluence_anvil_craft:super_heating/royal_steel_ingot_bonus_2"/>
+<recipe id="confluence_anvil_craft:super_heating/royal_steel_block_base"/>
+<recipe id="confluence_anvil_craft:super_heating/royal_steel_block_bonus_1"/>
+<recipe id="confluence_anvil_craft:super_heating/royal_steel_block_bonus_2"/>
 </row>

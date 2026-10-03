@@ -22,6 +22,10 @@ items:
 
 # 圣化新三矿
 
+<tip>
+**注**:截至汇流来世1.2.6，新三矿的矿物块和粗矿块形态依旧为未完成物品，可能无法获得，请以实际内容为准。
+</tip>
+
 这些方块不能生成在世界中，也不能通过神圣传染出现，而是由<ref item="anvilcraft:mineral_fountain"/>产出。
 <row halign="center">
 <recipe id="confluence_anvil_craft:mineral_fountain/sanctification_cobalt_ore"/>

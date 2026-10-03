@@ -1,0 +1,14 @@
+{
+  "type": "anvilcraft:time_warp",
+  "ingredients": [
+    {
+      "items": "#c:storage_blocks/adamantite"
+    }
+  ],
+  "results": [
+    {
+      "count": 3,
+      "id": "confluence:raw_adamantite"
+    }
+  ]
+}

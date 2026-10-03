@@ -1,0 +1,21 @@
+{
+  "type": "anvilcraft:super_heating",
+  "consume": 10,
+  "fluid": "minecraft:lava",
+  "ingredients": [
+    {
+      "items": "#c:raw_materials/hellstone"
+    },
+    {
+      "items": "minecraft:obsidian"
+    },
+    {
+      "items": "anvilcraft:earth_core_shard"
+    }
+  ],
+  "results": [
+    {
+      "id": "confluence:hellstone_ingot"
+    }
+  ]
+}

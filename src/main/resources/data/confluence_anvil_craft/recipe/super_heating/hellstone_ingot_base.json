@@ -1,0 +1,19 @@
+{
+  "type": "anvilcraft:super_heating",
+  "consume": 10,
+  "fluid": "minecraft:lava",
+  "ingredients": [
+    {
+      "count": 3,
+      "items": "#c:raw_materials/hellstone"
+    },
+    {
+      "items": "minecraft:obsidian"
+    }
+  ],
+  "results": [
+    {
+      "id": "confluence:hellstone_ingot"
+    }
+  ]
+}

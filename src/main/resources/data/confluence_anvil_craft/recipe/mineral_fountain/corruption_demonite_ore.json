@@ -1,0 +1,12 @@
+{
+  "type": "anvilcraft:mineral_fountain",
+  "from_block": {
+    "blocks": "confluence:ebonstone"
+  },
+  "need_block": {
+    "blocks": "#c:storage_blocks/raw_demonite"
+  },
+  "to_block": {
+    "block": "confluence:corruption_demonite_ore"
+  }
+}

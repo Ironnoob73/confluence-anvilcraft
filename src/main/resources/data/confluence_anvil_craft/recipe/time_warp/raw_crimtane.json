@@ -1,0 +1,14 @@
+{
+  "type": "anvilcraft:time_warp",
+  "ingredients": [
+    {
+      "items": "#c:storage_blocks/crimtane"
+    }
+  ],
+  "results": [
+    {
+      "count": 3,
+      "id": "confluence:raw_crimtane"
+    }
+  ]
+}

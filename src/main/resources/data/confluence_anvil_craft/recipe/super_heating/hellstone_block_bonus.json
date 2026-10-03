@@ -1,0 +1,22 @@
+{
+  "type": "anvilcraft:super_heating",
+  "consume": 90,
+  "fluid": "minecraft:lava",
+  "ingredients": [
+    {
+      "items": "#c:storage_blocks/raw_hellstone"
+    },
+    {
+      "count": 9,
+      "items": "minecraft:obsidian"
+    },
+    {
+      "items": "#c:storage_blocks/earth_core_shard"
+    }
+  ],
+  "results": [
+    {
+      "id": "confluence:hellstone_block"
+    }
+  ]
+}

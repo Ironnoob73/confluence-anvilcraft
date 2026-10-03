@@ -22,6 +22,10 @@ items:
 
 # Sanctification Hardmode Ores
 
+<tip>
+**Note**: As of *Confluence* version 1.2.6, the mineral blocks and raw mineral blocks for the hardmode ores remain unfinished items and may be unobtainable, please refer to the actual in-game content.
+</tip>
+
 These blocks do not generate naturally in the world, nor do they appear through Hallow spread. Instead, they are produced by <ref item="anvilcraft:mineral_fountain"/>.
 <row halign="center">
 <recipe id="confluence_anvil_craft:mineral_fountain/sanctification_cobalt_ore"/>

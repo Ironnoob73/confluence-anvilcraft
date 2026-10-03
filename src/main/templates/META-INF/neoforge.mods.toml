@@ -3,18 +3,18 @@ loaderVersion="${loader_version_range}"
 license="${mod_license}"
 
 [[mods]]
-
-modId="${mod_id}" #mandatory
-
-version="${mod_version}" #mandatory
-
-displayName="${mod_name}" #mandatory
-
+modId="${mod_id}"
+version="${mod_version}"
+displayName="${mod_name}"
 authors="LD_Anvil"
-
 description='''
-Example mod description.
+A mod designed to adapt and ensure compatibility between Confluence: Otherworld and AnvilCraft game flow.
 '''
+logoFile = "assets/confluence_anvil_craft/ageratum/textures/logo.png"
+issueTrackerURL = "https://github.com/Ironnoob73/confluence-anvilcraft/issues"
+
+[modproperties.${mod_id}]
+catalogueImageIcon = "icon.png"
 
 [[mixins]]
 config="${mod_id}.mixins.json"
@@ -22,10 +22,10 @@ config="${mod_id}.mixins.json"
 [[accessTransformers]]
 file="META-INF/accesstransformer.cfg"
 
-[[dependencies.${mod_id}]] #optional
-    modId="neoforge" #mandatory
-    type="required" #mandatory
-    versionRange="[${neo_version},)" #mandatory
+[[dependencies.${mod_id}]]
+    modId="neoforge"
+    type="required"
+    versionRange="[${neo_version},)"
     ordering="NONE"
     side="BOTH"
 
@@ -34,4 +34,18 @@ file="META-INF/accesstransformer.cfg"
     type="required"
     versionRange="${minecraft_version_range}"
     ordering="NONE"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="confluence"
+    type="required"
+    versionRange="[1.2.6,)"
+    ordering="AFTER"
+    side="BOTH"
+
+[[dependencies.${mod_id}]]
+    modId="anvilcraft"
+    type="required"
+    versionRange="[1.6.0,)"
+    ordering="AFTER"
     side="BOTH"
