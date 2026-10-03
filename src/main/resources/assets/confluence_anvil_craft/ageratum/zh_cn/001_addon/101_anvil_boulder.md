@@ -20,4 +20,5 @@ items:
 </row>
 - 需要灵雾环境进行制作。
 - 可以当作正常铁砧使用，但使用一次就会变成巨石。
-- 无法被<ref item="anvilcraft:magnet_block"/>吸引。
+- 无法被<ref item="anvilcraft:magnet_block"/>吸引，而是在上方<ref item="anvilcraft:magnet_block"/>更新时变为巨石。
+- 停止运动后会变为对应的正常铁砧。

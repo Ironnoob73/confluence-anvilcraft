@@ -20,4 +20,5 @@ items:
 </row>
 - Requires an Ecto Mist environment for crafting.
 - Can be used as a standard anvil, but turns into a boulder after a single use.
-- Cannot be attracted by <ref item="anvilcraft:magnet_block"/>.
+- Cannot be attracted by <ref item="anvilcraft:magnet_block"/>. Instead, it transforms into a boulder when a <ref item="anvilcraft:magnet_block"/> above it updates.
+- Transforms into the corresponding standard anvil after it stops moving.
