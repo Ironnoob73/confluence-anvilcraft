@@ -5,6 +5,7 @@
   "mixins": [
     "AnvilMenuMixin",
     "BlockEventListenerMixin",
+    "GiantAnvilShockEventListenerMixin",
     "HardmodeAnvilBlockMixin",
     "ImpactPileBehaviorMixin",
     "MagnetBlockMixin",

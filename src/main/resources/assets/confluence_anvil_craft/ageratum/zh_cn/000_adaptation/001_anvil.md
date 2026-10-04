@@ -24,6 +24,7 @@ items:
 - 可以参与铁砧加工
 - 可以砸伤生物，能够造成最多120点伤害
 - 砸中<ref item="anvilcraft:impact_pile"/>可以无视下落高度生成<ref item="anvilcraft:mineral_fountain"/>（其他条件依旧要满足）。
+- 可以被<ref item="anvilcraft:giant_anvil"/>的震起模式弹起（尽管看起来没有）。
 
 # 发电
 三种来自汇流来世的砧也可以用于<ref item="anvilcraft:piezoelectric_crystal"/>发电。
