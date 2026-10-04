@@ -46,6 +46,7 @@ public class JeiPlugin implements IModPlugin {
     @Override
     public void registerRecipeCatalysts(IRecipeCatalystRegistration registration) {
         registration.addRecipeCatalyst(new ItemStack(ModBlocks.FISH_TANK.asItem()), SHIMMER_TRANSMUTATION);
+        registration.addRecipeCatalyst(new ItemStack(ModBlocks.LARGE_CAULDRON.asItem()), SHIMMER_TRANSMUTATION);
         BuiltInRegistries.ITEM
                 .getOptional(ResourceLocation.fromNamespaceAndPath("confluence", "bottomless_shimmer_bucket"))
                 .ifPresent(item -> registration.addRecipeCatalyst(new ItemStack(item), SHIMMER_TRANSMUTATION));

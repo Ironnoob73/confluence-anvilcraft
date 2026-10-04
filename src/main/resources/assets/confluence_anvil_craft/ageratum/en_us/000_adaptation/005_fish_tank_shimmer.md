@@ -1,23 +1,25 @@
 ---
 navigation:
-  title: "Shimmer Fishtank"
+  title: "Shimmer"
   icon: "anvilcraft:fish_tank"
 items:
   - anvilcraft:fish_tank
+  - anvilcraft:large_cauldron
   - confluence:bottomless_shimmer_bucket
 ---
 
 <row halign="center">
 <item id="anvilcraft:fish_tank"/>
+<item id="anvilcraft:large_cauldron"/>
 <item id="confluence:bottomless_shimmer_bucket"/>
 </row>
 
-# Shimmer Fishtank
+# Shimmer Fish Tank & Shimmer Large Cauldron
 <danger>
 As of *Confluence* version 1.2.6, right-clicking an <ref item="anvilcraft:fish_tank"/> with an <ref item="confluence:aetherium_block"/> or <ref item="confluence:bottomless_shimmer_bucket"/> will cause the <ref item="anvilcraft:fish_tank"/> to turn into a <ref item="minecraft:cauldron"/>, please use other methods to transfer Shimmer.
 </danger>
 
-When the <ref item="anvilcraft:fish_tank"/> contains Shimmer, you can process the **Shimmer Transmutation** and **Shimmer Decomposition** recipes. Processing these recipes does not consume Shimmer.
+A <ref item="anvilcraft:fish_tank"/> or a <ref item="anvilcraft:large_cauldron"/> containing Shimmer can perform the **Shimmer Transmutation** and **Shimmer Decomposition** recipes without consuming Shimmer.
 
 <tip>
 **Note**: Items dropped into the <ref item="confluence:aetherium_cauldron"/> added by *Confluence: Otherworld* are transmuted and decomposed immediately, without the need for Anvil.

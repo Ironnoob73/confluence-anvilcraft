@@ -8,7 +8,7 @@ import dev.anvilcraft.lib.v2.util.predicate.ItemIngredientPredicate;
 import dev.dubhe.anvilcraft.api.event.AnvilBehaviorRegisterEvent;
 import dev.dubhe.anvilcraft.init.block.ModBlocks;
 import dev.hail.confluence_anvil_craft.ConfluenceAnvilCraft;
-import dev.hail.confluence_anvil_craft.anvil.ShimmerFishTankBehavior;
+import dev.hail.confluence_anvil_craft.anvil.ShimmerReactionBehavior;
 import dev.hail.confluence_anvil_craft.compat.ConfluenceShimmer;
 import dev.hail.confluence_anvil_craft.recipe.ShimmerTransmutationRecipe;
 import net.minecraft.resources.ResourceLocation;
@@ -71,8 +71,9 @@ public final class ShimmerEventHandler {
 
     @SubscribeEvent
     public static void onRegisterAnvilBehavior(AnvilBehaviorRegisterEvent event) {
-        event.registerBehavior(ModBlocks.FISH_TANK.get(), ShimmerFishTankBehavior.INSTANCE);
-        ConfluenceAnvilCraft.LOGGER.info("[{}] Registered shimmer behavior for anvilcraft:fish_tank",
+        event.registerBehavior(ModBlocks.FISH_TANK.get(), ShimmerReactionBehavior.INSTANCE);
+        event.registerBehavior(ModBlocks.LARGE_CAULDRON.get(), ShimmerReactionBehavior.INSTANCE);
+        ConfluenceAnvilCraft.LOGGER.info("[{}] Registered shimmer behavior for anvilcraft:fish_tank and anvilcraft:large_cauldron",
                 ConfluenceAnvilCraft.MOD_ID);
     }
 }

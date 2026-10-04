@@ -28,6 +28,9 @@ import java.util.List;
  * <p>环境额外要求铁砧正下方是 {@code anvilcraft:fish_tank}：汇流来世本身已经改造过炼药锅
  * （物品丢入即执行微光配方），所以这里刻意只接管「铁砧砸鱼缸」这一条路径。</p>
  *
+ * <p>大型炼药锅由 {@code ShimmerReactionBehavior} 走行为路径处理，刻意<b>不</b>匹配本配方类型，
+ * 避免它在自己的 {@code handleGiantAnvilImpact} 里再处理一遍。</p>
+ *
  * <p>JSON 只暴露 <code>ingredients</code> 与 <code>results</code>：环境条件（微光流体 + 鱼缸）
  * 由配方类型本身固定，避免数据包误用为其它流体反应。</p>
  */

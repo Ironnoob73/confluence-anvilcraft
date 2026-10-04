@@ -1,8 +1,11 @@
 package dev.hail.confluence_anvil_craft.compat;
 
 import dev.anvilcraft.lib.v2.util.predicate.ItemIngredientPredicate;
+import dev.dubhe.anvilcraft.block.entity.LargeCauldronBlockEntity;
+import dev.dubhe.anvilcraft.init.block.ModBlocks;
 import dev.hail.confluence_anvil_craft.init.CACRecipes;
 import net.minecraft.Util;
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.server.MinecraftServer;
 import net.minecraft.server.level.ServerLevel;
@@ -13,6 +16,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.crafting.Recipe;
 import net.minecraft.world.item.crafting.RecipeHolder;
 import net.minecraft.world.item.crafting.SingleRecipeInput;
+import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.fluids.FluidStack;
 import org.confluence.mod.common.CommonConfigs;
 import org.confluence.mod.common.data.saved.GamePhase;
@@ -42,11 +46,43 @@ import java.util.List;
  * 产出乘以 {@code times} 并按最大堆叠拆分。</p>
  */
 public final class ConfluenceShimmer {
+    /**
+     * 单次结算最多处理多少「组」。
+     * <p>By Deepseek: 这是一个防御性上限，正常内容永远碰不到——鱼缸每格最多 64 个，
+     * 大型炼药锅每个输入格最多 9 组（576 个）。保留它是为了防止某个容器实现返回超大的堆叠
+     * 时，一次结算产出成千上万个 ItemStack。</p>
+     */
+    public static final int MAX_CRAFTS_PER_PASS = 576;
+
     private ConfluenceShimmer() {
     }
 
     public static boolean isShimmer(FluidStack stack) {
         return !stack.isEmpty() && stack.is(CACRecipes.SHIMMER_FLUID);
+    }
+
+    /** 大型炼药锅是分层流体容器，任意一层是微光即可。 */
+    public static boolean hasShimmer(LargeCauldronBlockEntity cauldron) {
+        for (FluidStack stack : cauldron.getFluids().copyFluids()) {
+            if (isShimmer(stack)) return true;
+        }
+        return false;
+    }
+
+    /**
+     * 解析大型炼药锅主体。
+     * <p>普通铁砧落地时 {@code AnvilEventListener} 已经把多方块坐标归一到主体，
+     * 但巨型铁砧分支在归一之前就调用了行为，所以这里再兜一层 {@link LargeCauldronBlockEntity#getMain}。</p>
+     */
+    public static LargeCauldronBlockEntity largeCauldron(ServerLevel level, BlockPos pos, BlockState state) {
+        if (level.getBlockEntity(pos) instanceof LargeCauldronBlockEntity cauldron) {
+            LargeCauldronBlockEntity main = cauldron.getMainPart();
+            return main == null ? cauldron : main;
+        }
+        if (state.is(ModBlocks.LARGE_CAULDRON.get())) {
+            return LargeCauldronBlockEntity.getMain(level, pos, state);
+        }
+        return null;
     }
 
     /** 世界阶段是否已达到配方要求（对应 {@code ItemTransmutationRecipe#matches} 里的判断）。 */
@@ -73,7 +109,7 @@ public final class ConfluenceShimmer {
         for (RecipeHolder<ItemTransmutationRecipe> holder : found) {
             ItemTransmutationRecipe recipe = holder.value();
             if (!recipe.isValid()) return null;
-            int times = stack.getCount() / recipe.shrink();
+            int times = Math.min(stack.getCount() / recipe.shrink(), MAX_CRAFTS_PER_PASS);
             if (times <= 0) return null;
             List<ItemStack> outputs = new ArrayList<>();
             for (ItemStack target : recipe.target()) {
@@ -110,7 +146,7 @@ public final class ConfluenceShimmer {
             if (stack.getCount() < result.getCount()) continue;
             if (!ItemStack.isSameItem(stack, result)) continue;
 
-            int times = stack.getCount() / result.getCount();
+            int times = Math.min(stack.getCount() / result.getCount(), MAX_CRAFTS_PER_PASS);
             List<ItemStack> outputs = new ArrayList<>();
             for (Ingredient ingredient : recipe.getIngredients()) {
                 if (ingredient.isEmpty()) continue;

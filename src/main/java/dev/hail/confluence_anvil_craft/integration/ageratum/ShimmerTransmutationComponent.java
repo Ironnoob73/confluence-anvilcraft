@@ -21,7 +21,10 @@ public class ShimmerTransmutationComponent extends MDBaseAnvilRecipeComponent {
         super(enableAlignCenter);
         ingredients = recipe.getInputItems();
         resultItems = recipe.getResultItems();
-        inputBlockStates = List.of(ModBlocks.FISH_TANK.getDefaultState());
+        inputBlockStates = List.of(
+                ModBlocks.FISH_TANK.getDefaultState(),
+                ModBlocks.LARGE_CAULDRON.getDefaultState()
+        );
     }
 
     @Override
