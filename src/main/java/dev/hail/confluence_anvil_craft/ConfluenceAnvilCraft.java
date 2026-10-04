@@ -35,6 +35,7 @@ public class ConfluenceAnvilCraft {
         CACBlockEntities.register(modEventBus);
         CACBlocks.register();
         CACEntities.register();
+        CACRecipes.register();
 
         modEventBus.addListener(this::registerPayload);
         modEventBus.addListener(this::onCommonSetup);
