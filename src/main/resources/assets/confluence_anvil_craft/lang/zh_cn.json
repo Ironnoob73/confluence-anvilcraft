@@ -17,5 +17,7 @@
 
   "screen.confluence_anvil_craft.hardmode_anvil_hammer.anvil_hammer_mode": "砧锤",
   "screen.confluence_anvil_craft.hardmode_anvil_hammer.mining_hammer_mode": "挖掘锤",
-  "screen.confluence_anvil_craft.hardmode_anvil_hammer.pickaxe_mode": "镐"
+  "screen.confluence_anvil_craft.hardmode_anvil_hammer.pickaxe_mode": "镐",
+
+  "gui.confluence_anvil_craft.category.shimmer_transmutation": "微光嬗变"
 }
