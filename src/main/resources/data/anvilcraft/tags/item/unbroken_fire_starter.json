@@ -1,0 +1,15 @@
+{
+  "values": [
+    "confluence:hellstone",
+    "confluence:ash_hellstone",
+    "confluence:hellstone_nugget",
+    "confluence:hellstone_ingot",
+    "confluence:hellstone_block",
+    "confluence:raw_hellstone",
+    "confluence:raw_hellstone_block",
+    "confluence:hellstone_bricks",
+    "confluence:hellstone_bricks_stairs",
+    "confluence:hellstone_bricks_slab",
+    "confluence:hellstone_bricks_wall"
+  ]
+}

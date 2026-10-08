@@ -1,0 +1,16 @@
+{
+  "type": "anvilcraft:time_warp",
+  "ingredients": [
+    {
+      "items": "#c:ingots/hellstone"
+    },
+    {
+      "items": "anvilcraft:earth_core_shard"
+    }
+  ],
+  "results": [
+    {
+      "id": "anvilcraft:ember_metal_ingot"
+    }
+  ]
+}

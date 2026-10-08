@@ -1,0 +1,15 @@
+{
+  "type": "anvilcraft:time_warp",
+  "consume": 1000,
+  "fluid": "anvilcraft:melt_gem",
+  "ingredients": [
+    {
+      "items": "#c:gems/jade"
+    }
+  ],
+  "results": [
+    {
+      "id": "confluence:jade_block"
+    }
+  ]
+}

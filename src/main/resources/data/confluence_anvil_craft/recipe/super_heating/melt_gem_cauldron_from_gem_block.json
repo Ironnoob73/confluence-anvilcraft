@@ -1,0 +1,13 @@
+{
+  "type": "anvilcraft:super_heating",
+  "fluid": [],
+  "ingredients": [
+    {
+      "items": "#confluence_anvil_craft:gems_block_for_royal_steel"
+    }
+  ],
+  "transform": {
+    "amount": 1000,
+    "id": "anvilcraft:melt_gem"
+  }
+}

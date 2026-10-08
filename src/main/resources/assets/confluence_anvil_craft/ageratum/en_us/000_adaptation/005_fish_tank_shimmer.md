@@ -15,10 +15,6 @@ items:
 </row>
 
 # Shimmer Fish Tank & Shimmer Large Cauldron
-<danger>
-As of **Confluence version 1.2.6** & **Anvilcraft 1.6.0+snapshot2357**, right-clicking an <ref item="anvilcraft:fish_tank"/> with an <ref item="confluence:aetherium_block"/> or <ref item="confluence:bottomless_shimmer_bucket"/> will cause the <ref item="anvilcraft:fish_tank"/> to turn into a <ref item="minecraft:cauldron"/>, please use other methods to transfer Shimmer.
-</danger>
-
 A <ref item="anvilcraft:fish_tank"/> or a <ref item="anvilcraft:large_cauldron"/> containing Shimmer can perform the **Shimmer Transmutation** and **Shimmer Decomposition** recipes without consuming Shimmer.
 
 <tip>

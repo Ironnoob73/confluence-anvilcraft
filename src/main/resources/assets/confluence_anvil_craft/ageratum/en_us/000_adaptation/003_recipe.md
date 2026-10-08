@@ -18,6 +18,18 @@ Lead can replace a portion of the Iron in the *Confluence* mod when crafting. Li
 <recipe id="confluence_anvil_craft:substitution/lead_remote_transmission_pole"/>
 </row>
 
+Gem-related crafting recipes can use gems added by any other mod.
+<row halign="center">
+<recipe id="confluence_anvil_craft:substitution/ruby_laser"/>
+<recipe id="confluence_anvil_craft:substitution/ruby_prism"/>
+<recipe id="confluence_anvil_craft:substitution/sapphire_heat_collector"/>
+<recipe id="confluence_anvil_craft:substitution/sapphire_trident"/>
+<recipe id="confluence_anvil_craft:substitution/topaz_tesla_tower"/>
+</row>
+
+Royal steel <ref item="anvilcraft:royal_steel_upgrade_smithing_template"/> can be craft directly.
+<recipe id="confluence_anvil_craft:tool/royal_steel_upgrade"/>
+
 # Royal Steel
 You can craft Royal Steel using Platinum and Amber with any Ruby, Topaz, or Sapphire.
 
@@ -28,4 +40,11 @@ You can craft Royal Steel using Platinum and Amber with any Ruby, Topaz, or Sapp
 <recipe id="confluence_anvil_craft:super_heating/royal_steel_block_base"/>
 <recipe id="confluence_anvil_craft:super_heating/royal_steel_block_bonus_1"/>
 <recipe id="confluence_anvil_craft:super_heating/royal_steel_block_bonus_2"/>
+</row>
+
+# Ember Metal
+You can use Hellstone to craft Ember Metal. This crafting method does not yield bonus output.
+<row halign="center">
+<recipe id="confluence_anvil_craft:time_warp/ember_metal_ingot_from_hellstone"/>
+<recipe id="confluence_anvil_craft:time_warp/ember_metal_block_from_hellstone"/>
 </row>

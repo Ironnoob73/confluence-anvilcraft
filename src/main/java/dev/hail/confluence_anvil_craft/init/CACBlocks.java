@@ -5,6 +5,7 @@ import dev.hail.confluence_anvil_craft.block.AnvilBoulderBlock;
 import dev.hail.confluence_anvil_craft.entity.AnvilBoulderEntity;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import org.confluence.mod.common.init.block.FunctionalBlocks;
 import org.confluence.mod.common.init.block.ModBlocks;
@@ -14,10 +15,12 @@ import static dev.hail.confluence_anvil_craft.ConfluenceAnvilCraft.REGISTRUM;
 
 public class CACBlocks {
     public static final BlockEntry<AnvilBoulderBlock> ANVIL_BOULDER = REGISTRUM.block("anvil_boulder",
-                    properties -> new AnvilBoulderBlock(AnvilBoulderEntity::new, Blocks.ANVIL))
+                    properties -> new AnvilBoulderBlock(properties.sound(SoundType.ANVIL),
+                            AnvilBoulderEntity::new, Blocks.ANVIL))
             .item().build().register();
     public static final BlockEntry<AnvilBoulderBlock> LEAD_ANVIL_BOULDER = REGISTRUM.block("lead_anvil_boulder",
-                    properties -> new AnvilBoulderBlock(AnvilBoulderEntity::new, FunctionalBlocks.LEAD_ANVIL.get()))
+                    properties -> new AnvilBoulderBlock(properties.sound(SoundType.ANVIL),
+                            AnvilBoulderEntity::new, FunctionalBlocks.LEAD_ANVIL.get()))
             .item().build().register();
 
     public static final BlockEntry<Block> SANCTIFICATION_COBALT_ORE = registerSancificationOre("sanctification_cobalt_ore");

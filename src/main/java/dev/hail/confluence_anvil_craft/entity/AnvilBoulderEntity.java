@@ -4,6 +4,7 @@ import dev.hail.confluence_anvil_craft.block.AnvilBoulderBlock;
 import dev.hail.confluence_anvil_craft.init.CACEntities;
 import net.minecraft.core.BlockPos;
 import net.minecraft.server.level.ServerLevel;
+import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.level.Level;
@@ -14,6 +15,7 @@ import net.minecraft.world.phys.Vec3;
 import org.confluence.mod.common.entity.projectile.boulder.BoulderEntity;
 import org.jetbrains.annotations.NotNull;
 
+@SuppressWarnings("unused")
 public class AnvilBoulderEntity extends BoulderEntity {
 
     public AnvilBoulderEntity(EntityType<? extends BoulderEntity> entityType, Level level) {
@@ -43,5 +45,15 @@ public class AnvilBoulderEntity extends BoulderEntity {
         } else {
             Block.popResource(serverLevel, blockPos, anvil);
         }
+    }
+
+    @Override
+    protected void playRemoveSound(ServerLevel serverLevel, @NotNull BlockPos pos) {
+        serverLevel.playSound(null, pos, this.getBlockState().getSoundType().getPlaceSound(), SoundSource.BLOCKS, 5.0F, 0.5F);
+    }
+
+    @Override
+    protected void playHitBlockSound(ServerLevel serverLevel) {
+        serverLevel.playSound(null, this.blockPosition(), this.getBlockState().getSoundType().getPlaceSound(), SoundSource.BLOCKS, 1.0F, 1.0F);
     }
 }

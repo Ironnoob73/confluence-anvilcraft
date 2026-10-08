@@ -13,6 +13,7 @@ import net.minecraft.world.entity.item.FallingBlockEntity;
 import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.state.BlockState;
+import org.confluence.mod.common.block.functional.boulder.BoulderBlock;
 import org.confluence.mod.common.block.functional.crafting.HardmodeAnvilBlock;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
@@ -52,7 +53,7 @@ public class GiantAnvilShockEventListenerMixin {
             Block block = state.getBlock();
             if (block instanceof IShockFixedBlock fixed && fixed.anvilcraft$isFixedDuringShockBounce(state)) continue;
 
-            if (block instanceof AnvilBoulderBlock) {
+            if (block instanceof BoulderBlock) {
                 // 破坏铁砧巨石，BoulderBlock#onRemove 会把它变成滚走的巨石
                 level.destroyBlock(pos, false);
             } else if (block instanceof HardmodeAnvilBlock) {

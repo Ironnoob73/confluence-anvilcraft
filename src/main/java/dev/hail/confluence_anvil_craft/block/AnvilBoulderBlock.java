@@ -18,6 +18,7 @@ import net.minecraft.world.level.block.AnvilBlock;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.HorizontalDirectionalBlock;
 import net.minecraft.world.level.block.entity.BlockEntity;
+import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.DirectionProperty;
@@ -31,8 +32,8 @@ public class AnvilBoulderBlock extends BoulderBlock{
     public static final DirectionProperty FACING = HorizontalDirectionalBlock.FACING;
     public Block originalAnvil;
 
-    public AnvilBoulderBlock(BoulderFactory factory, Block originalAnvil) {
-        super(factory);
+    public AnvilBoulderBlock(BlockBehaviour.Properties properties, BoulderFactory factory, Block originalAnvil) {
+        super(properties, factory);
         this.registerDefaultState(this.stateDefinition.any().setValue(FACING, Direction.NORTH));
         this.originalAnvil = originalAnvil;
     }

@@ -18,6 +18,18 @@ navigation:
 <recipe id="confluence_anvil_craft:substitution/lead_remote_transmission_pole"/>
 </row>
 
+宝石相关的合成可以使用其他任何模组添加的宝石。
+<row halign="center">
+<recipe id="confluence_anvil_craft:substitution/ruby_laser"/>
+<recipe id="confluence_anvil_craft:substitution/ruby_prism"/>
+<recipe id="confluence_anvil_craft:substitution/sapphire_heat_collector"/>
+<recipe id="confluence_anvil_craft:substitution/sapphire_trident"/>
+<recipe id="confluence_anvil_craft:substitution/topaz_tesla_tower"/>
+</row>
+
+皇家钢<ref item="anvilcraft:royal_steel_upgrade_smithing_template"/>可以直接合成。
+<recipe id="confluence_anvil_craft:tool/royal_steel_upgrade"/>
+
 # 皇家钢
 你可以使用铂金与琥珀和任意红宝石、黄玉或蓝宝石等制造皇家钢。
 
@@ -28,4 +40,11 @@ navigation:
 <recipe id="confluence_anvil_craft:super_heating/royal_steel_block_base"/>
 <recipe id="confluence_anvil_craft:super_heating/royal_steel_block_bonus_1"/>
 <recipe id="confluence_anvil_craft:super_heating/royal_steel_block_bonus_2"/>
+</row>
+
+# 余烬金属
+你可以使用狱石来制造余烬金属。这种制造方式不能增产。
+<row halign="center">
+<recipe id="confluence_anvil_craft:time_warp/ember_metal_ingot_from_hellstone"/>
+<recipe id="confluence_anvil_craft:time_warp/ember_metal_block_from_hellstone"/>
 </row>
