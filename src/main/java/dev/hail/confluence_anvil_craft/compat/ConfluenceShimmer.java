@@ -19,7 +19,7 @@ import net.minecraft.world.item.crafting.SingleRecipeInput;
 import net.minecraft.world.level.block.state.BlockState;
 import net.neoforged.neoforge.fluids.FluidStack;
 import org.confluence.mod.common.CommonConfigs;
-import org.confluence.mod.common.data.saved.GamePhase;
+import org.confluence.mod.common.data.GamePhase;
 import org.confluence.mod.common.data.saved.KillBoard;
 import org.confluence.mod.common.init.ModRecipes;
 import org.confluence.mod.common.init.ModTags;

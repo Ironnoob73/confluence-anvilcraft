@@ -34,7 +34,6 @@ import org.confluence.mod.common.init.ModTags;
 import org.confluence.mod.common.init.ModTiers;
 import org.confluence.mod.common.init.block.FunctionalBlocks;
 import org.confluence.mod.common.init.item.ModItems;
-import org.jetbrains.annotations.Nullable;
 import org.jetbrains.annotations.Range;
 
 import javax.annotation.ParametersAreNonnullByDefault;

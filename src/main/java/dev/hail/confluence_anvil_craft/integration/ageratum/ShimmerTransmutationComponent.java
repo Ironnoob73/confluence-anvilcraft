@@ -4,8 +4,6 @@ import dev.anvilcraft.lib.v2.util.predicate.ChanceItemStack;
 import dev.anvilcraft.lib.v2.util.predicate.ItemIngredientPredicate;
 import dev.dubhe.anvilcraft.client.markdown.recipe.anvil.MDBaseAnvilRecipeComponent;
 import dev.dubhe.anvilcraft.init.block.ModBlocks;
-import dev.dubhe.anvilcraft.recipe.anvil.predicate.block.HasCauldron;
-import dev.dubhe.anvilcraft.util.CauldronUtil;
 import dev.hail.confluence_anvil_craft.recipe.ShimmerTransmutationRecipe;
 import net.minecraft.world.level.block.state.BlockState;
 import org.jetbrains.annotations.NotNull;

@@ -1,7 +1,6 @@
 package dev.hail.confluence_anvil_craft.mixin;
 
 import com.llamalad7.mixinextras.sugar.Local;
-import dev.dubhe.anvilcraft.block.ImpactPileBlock;
 import dev.dubhe.anvilcraft.event.BlockEventListener;
 import dev.hail.confluence_anvil_craft.item.HardmodeAnvilHammerItem;
 import net.minecraft.world.InteractionHand;

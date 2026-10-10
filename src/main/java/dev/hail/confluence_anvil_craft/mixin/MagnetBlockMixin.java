@@ -17,6 +17,7 @@ public class MagnetBlockMixin {
     @Inject(method = "attract(Lnet/minecraft/world/level/block/state/BlockState;Lnet/minecraft/world/level/Level;Lnet/minecraft/core/BlockPos;)V",
         at = @At(value = "INVOKE",
                 target = "Lnet/minecraft/world/level/Level;getBlockState(Lnet/minecraft/core/BlockPos;)Lnet/minecraft/world/level/block/state/BlockState;",
+                ordinal = 1,
                 shift = At.Shift.AFTER), cancellable = true)
     private static void injectedAttract(BlockState state, Level level, BlockPos magnetPos, CallbackInfo ci, @Local(name = "currentPos") BlockPos currentPos){
         if (level.getBlockState(currentPos).getBlock() instanceof AnvilBoulderBlock) {
