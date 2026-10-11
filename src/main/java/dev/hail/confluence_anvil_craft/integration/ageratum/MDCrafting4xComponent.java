@@ -75,7 +75,7 @@ public class MDCrafting4xComponent extends MDRecipeComponent {
             int y = 9 + (i % 4) * 19;
             AgeratumUtil.renderItemWithoutSlot(context, ingredient, mouseX, mouseY, x, y);
         }
-        AgeratumUtil.renderItemWithoutSlot(context, recipe.result.copy(), mouseX, mouseY, 135, 37);
+        AgeratumUtil.renderItemWithoutSlot(context, recipe.getResult().copy(), mouseX, mouseY, 135, 37);
 
         Ingredient workStation;
         switch (this.recipe){
