@@ -2,8 +2,8 @@ package dev.hail.confluence_anvil_craft.mixin;
 
 import dev.dubhe.anvilcraft.AnvilCraft;
 import dev.dubhe.anvilcraft.block.MagnetBlock;
-import dev.dubhe.anvilcraft.entity.AnimateAscendingBlockEntity;
 import dev.dubhe.anvilcraft.init.block.ModBlockTags;
+import dev.dubhe.anvilcraft.util.MagnetUtil;
 import dev.dubhe.anvilcraft.util.TriggerUtil;
 import net.minecraft.MethodsReturnNonnullByDefault;
 import net.minecraft.core.BlockPos;
@@ -85,7 +85,7 @@ abstract class HardmodeAnvilBlockMixin extends FallingBlock {
         BlockPos magnet = anvil;
         BlockState aboveState = level.getBlockState(anvil.above());
         if (aboveState.is(ModBlockTags.MAGNET) || aboveState.getBlock() instanceof MagnetBlock) return;
-        int distance = AnvilCraft.CONFIG.magnetAttractsDistance;
+        int distance = AnvilCraft.CONFIG.equipment.magnetAttractsDistance;
         for (int i = 0; i < distance; i++) {
             magnet = magnet.above();
             BlockState state1 = level.getBlockState(magnet);
@@ -99,7 +99,7 @@ abstract class HardmodeAnvilBlockMixin extends FallingBlock {
             level.destroyBlock(magnet.below(), true);
             level.setBlockAndUpdate(magnet.below(), state);
             level.setBlockAndUpdate(anvil, Blocks.AIR.defaultBlockState());
-            AnimateAscendingBlockEntity.animate(level, anvil, state, magnet.below());
+            MagnetUtil.animateAnvil(level, anvil.getBottomCenter(), state, magnet.below());
             TriggerUtil.liftingAnvil(level, magnet.below());
             return;
         }
